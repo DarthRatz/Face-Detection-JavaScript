@@ -23,13 +23,13 @@ function getSpeedlimit(position) {
 }
 
 Promise.all([
-  faceapi.nets.ageGenderNet.loadFromUri("./ models"),
-  faceapi.nets.faceExpressionNet.loadFromUri("./ models"),
-  faceapi.nets.faceLandmark68Net.loadFromUri("./ models"),
-  faceapi.nets.faceLandmark68TinyNet.loadFromUri("./ models"),
-  faceapi.nets.faceRecognitionNet.loadFromUri("./ models"),
-  faceapi.nets.ssdMobilenetv1.loadFromUri("./ models"),
-  faceapi.nets.tinyFaceDetector.loadFromUri("./ models"),
+  faceapi.nets.ageGenderNet.loadFromUri("../ models"),
+  faceapi.nets.faceExpressionNet.loadFromUri("../ models"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("../ models"),
+  faceapi.nets.faceLandmark68TinyNet.loadFromUri("../ models"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("../ models"),
+  faceapi.nets.ssdMobilenetv1.loadFromUri("../ models"),
+  faceapi.nets.tinyFaceDetector.loadFromUri("../ models"),
 ]).then(startVideo);
 
 function startVideo() {
