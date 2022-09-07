@@ -14,11 +14,11 @@ function getSpeedlimit(position) {
   );
   console.log(position);
   const address = JSON.parse(resp).addresses[0].address;
-  street.innerText = JSON.stringify(address);
-  speedLimit.innerText = JSON.stringify(address.speedLimit);
+  street.innerText = "Street Name: " + JSON.stringify(address.streetName);
+  speedLimit.innerText = "Speed Limit: " + JSON.stringify(address.speedLimit);
   if (speed === null || speed === undefined) {
   } else {
-    speedDiv.innerText = speed;
+    speedDiv.innerText = "Speed: " +  speed;
   }
 }
 
