@@ -10,7 +10,7 @@ function getSpeedlimit(position) {
   const long = position.coords.longitude;
   const speed = position.coords.speed;
   const resp = httpGet(
-    `https://atlas.microsoft.com/search/address/reverse/json?query=${lat},${long}&returnSpeedLimit=True&subscription-key=${env.SUBKEY}`
+    `https://atlas.microsoft.com/search/address/reverse/json?query=${lat},${long}&returnSpeedLimit=True&subscription-key=zqlUk9tcyTyRyycwex7Kqfmdm-ym0PQ_RMG2Aws3hmw`
   );
   console.log(position);
   const address = JSON.parse(resp).addresses[0].address;
