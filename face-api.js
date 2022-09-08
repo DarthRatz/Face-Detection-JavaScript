@@ -32156,7 +32156,7 @@
     "angry",
     "fearful",
     "disgusted",
-    "surprised",
+    "fatigued",
   ];
   var FaceExpressions = /** @class */ (function () {
     function FaceExpressions(probabilities) {
