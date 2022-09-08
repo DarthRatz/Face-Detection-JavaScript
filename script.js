@@ -1,12 +1,12 @@
 const video = document.getElementById("video");
-const street = document.getElementById("street");
-const speedDiv = document.getElementById("speed");
-const speedLimit = document.getElementById("speedLimit");
+// const street = document.getElementById("street");
+// const speedDiv = document.getElementById("speed");
+// const speedLimit = document.getElementById("speedLimit");
 
 let facematcher;
 let labeledFaceDescriptors;
 
-navigator.geolocation.getCurrentPosition(getSpeedlimit);
+// navigator.geolocation.getCurrentPosition(getSpeedlimit);
 
 Promise.all([
   faceapi.nets.ageGenderNet.loadFromUri("https://darthratz.github.io/Face-Detection-JavaScript/models"),
